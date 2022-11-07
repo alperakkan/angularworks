@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="row">
+        <div class="col-lg-12" id="navbar">
+            <ul id="nav">
+                <li routerLinkActive="active"> <a routerLink="recipes">Recipes</a> </li>
+                <li routerLinkActive="active"> <a routerLink="shopping-list">Shopping List</a></li>
+                <li>Shared</li>
+            </ul>
+            <hr>
+            <button class="btn btn-primary" (click)=onCreateServer()>btn</button>
+            <p>{{serverCreationStatus}}</p>
+            <label>Server Name</label>
+            <input type="text" class="form-control" (input)="onUpdateServerName($event)">
+            <p>{{serverName}}</p>
+            <button class="btn btn-danger" [disabled]="!allowNewServer">btn2</button>
+        </div>
+    </div>
+</div>

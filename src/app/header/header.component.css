@@ -1,0 +1,12 @@
+#nav {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    font-size: large;
+    margin-top: 20px;
+
+}
+
+#nav>li:hover {
+    color: blue;
+}
